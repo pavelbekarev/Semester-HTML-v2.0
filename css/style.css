@@ -84,4 +84,61 @@ li.mainmenu__item {
 .menu-button a {
     text-decoration: none;
     color: #F9FAFB;
+    font-family: 'DMSans-Medium', 'DM Sans', sans-serif;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+
+.content__wrapper {
+    
+    /* background: url('../img/Saly-19.svg') no-repeat right center; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    background: url('../img/Saly-19.svg') no-repeat right;
+    background-size: 75%;
+    background-position: top right;
+    height: 746px;
+}
+
+.content-items {
+    display: flex;
+    flex-direction: column;
+    width: 546px;
+}
+
+.watch-button {
+    display: flex;
+}
+
+.content-buttons {
+    display: flex;
+}
+
+.content-h2 {
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 84px;
+    font-family: 'DMSans-Medium', 'DM Sans', sans-serif;
+    background: linear-gradient(89.83deg, #2563EB 0.11%, #D946EF 58.65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+}
+
+.content-p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 30px;
+    color: #E5E7EB;
+    opacity: 0.8;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
 }
