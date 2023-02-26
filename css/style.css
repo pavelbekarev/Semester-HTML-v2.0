@@ -190,8 +190,10 @@ li.mainmenu__item {
 
 
 /* SERVICE SECTION */
+
 .service {
     display: flex;
+    flex-direction: column;
 }
 
 .service__title {
@@ -201,6 +203,7 @@ li.mainmenu__item {
     color: #FFFFFF;
     font-family: 'DMSans-Medium', 'DM Sans', sans-serif;
     text-align: center;
+    margin: 0 auto;
 }
 
 .service__text {
@@ -208,11 +211,84 @@ li.mainmenu__item {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-    text-align: center;
     color: #FFFFFF;
+    text-align: center;
     font-family: 'DMSans-Medium', 'DM Sans', sans-serif;
+    margin: 30px auto;
 }
 
 .service__content {
     display: grid;
+    grid-template-areas: "card1 card2 card3"
+                        "card4 card5 card6";
+    
+}
+
+.card1 { 
+    grid-area: card1;
+    background: linear-gradient(268.12deg, rgba(254, 254, 255, 0.032) -11.04%, rgba(255, 255, 255, 0.018) 104.89%);
+    box-shadow: 0px 22px 18px rgba(0, 0, 0, 0.05);
+    border-radius: 34px;
+    width: 370px;
+    height: 336px;
+    display: flex;
+    justify-content: center;
+}
+
+.card2 {
+    grid-area: card2;
+    background: linear-gradient(268.12deg, rgba(254, 254, 255, 0.032) -11.04%, rgba(255, 255, 255, 0.018) 104.89%);
+    box-shadow: 0px 22px 18px rgba(0, 0, 0, 0.05);
+    border-radius: 34px;
+    width: 370px;
+    height: 336px;
+    display: flex;
+    justify-content: center;
+}
+
+.card3 {
+    grid-area: card3;
+    background: linear-gradient(268.12deg, rgba(254, 254, 255, 0.032) -11.04%, rgba(255, 255, 255, 0.018) 104.89%);
+    box-shadow: 0px 22px 18px rgba(0, 0, 0, 0.05);
+    border-radius: 34px;
+    width: 370px;
+    height: 336px;
+    display: flex;
+    justify-content: center;
+}
+
+.card4 {
+    grid-area: card4;
+    background: linear-gradient(268.12deg, rgba(254, 254, 255, 0.032) -11.04%, rgba(255, 255, 255, 0.018) 104.89%);
+    box-shadow: 0px 22px 18px rgba(0, 0, 0, 0.05);
+    border-radius: 34px;
+    width: 370px;
+    height: 336px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.card5{
+    grid-area: card5;
+    background: linear-gradient(268.12deg, rgba(254, 254, 255, 0.032) -11.04%, rgba(255, 255, 255, 0.018) 104.89%);
+    box-shadow: 0px 22px 18px rgba(0, 0, 0, 0.05);
+    border-radius: 34px;
+    width: 370px;
+    height: 336px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.card6 {
+    grid-area: card6;
+    background: linear-gradient(268.12deg, rgba(254, 254, 255, 0.032) -11.04%, rgba(255, 255, 255, 0.018) 104.89%);
+    box-shadow: 0px 22px 18px rgba(0, 0, 0, 0.05);
+    border-radius: 34px;
+    width: 370px;
+    height: 336px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
 }
