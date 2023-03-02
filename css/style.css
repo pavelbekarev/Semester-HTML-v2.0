@@ -138,6 +138,7 @@ li.mainmenu__item {
     font-size: 16px;
     line-height: 21px;
     color: #F9FAFB;
+    font-family: 'DMSans-Medium', 'DM Sans', sans-serif;
 }
 
 .joinUs-button {
@@ -354,7 +355,6 @@ li.mainmenu__item {
 .third-section__content {
     display: flex;
     flex-direction: row;
-    
 }
 
 .third-section__text-content {
@@ -385,16 +385,23 @@ li.mainmenu__item {
 }
 
 .third-section__button {
-    padding: 7px auto;
+    /* padding: 7px auto; */
     background: linear-gradient(90.35deg, #2563EB 0.36%, #D946EF 201.02%);
     border-radius: 4px;
     width: 99px;
     height: 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
 }
 
 .third-section__button a {
     font-weight: 400;
+    text-decoration: none;
     font-size: 14px;
     line-height: 18px;
     color: #FFFFFF;
+    font-family: 'DMSans-Medium', 'DM Sans', sans-serif;
 }
+
