@@ -576,3 +576,58 @@ li.mainmenu__item {
     justify-content: space-evenly;
     margin: 11px auto;
 }
+
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    align-items: center;
+}
+
+.form_title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 55px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'DMSans-Medium', 'DM Sans', sans-serif;
+}
+
+.form_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.8;
+    margin-top: 13px;
+}
+
+.form-input {
+    display: flex;
+}
+
+.input__button {
+    background: linear-gradient(180deg, rgba(254, 254, 255, 0.0348) 0%, rgba(255, 255, 255, 0.048) 100%);
+    box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.07);
+    border-radius: 70px;
+    width: 860px;
+    height: 80px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.9;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 44px;
+}
+
+.sub__button {
+    background: linear-gradient(90.35deg, #2563EB 0.36%, #D946EF 201.02%);
+    opacity: 0.9;
+    border-radius: 70px;
+    padding: 15px 49px;
+}
