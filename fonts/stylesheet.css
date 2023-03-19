@@ -1,10 +1,16 @@
-@font-face {
+/* @font-face {
     font-family: 'DMSans-Bold';
     src: url('DMSans-Bold.ttf') format('ttf'),
          url('DMSans-Bold.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 
+} */
+
+
+@font-face {
+    font-family: "DMSans-Bold";
+    src: url("../fonts/DMSans-Bold.ttf")
 }
 
 
@@ -24,7 +30,7 @@
 
 @font-face {
     font-family: 'DMSans-Medium';
-    src: url('DMSans-Medium.ttf') format('ttf'),
+    src: url('../fonts/DMSans-Medium.ttf') format('ttf'),
          url('DMSans-Medium.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
@@ -35,14 +41,32 @@
 
 
 @font-face {
-    font-family: 'montserratregular';
-    src: url('montserrat-regular-webfont.woff2') format('woff2'),
-         url('montserrat-regular-webfont.woff') format('woff');
+    font-family: 'DMSans-Regular';
+    src: url('../fonts/DMSans-Regular.ttf') format('woff2');
     font-weight: normal;
     font-style: normal;
-
 }
 
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik-Regular';
+    src: url('../fonts/Rubik-Regular.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik-Medium';
+    src: url('../fonts/Rubik-Medium.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 

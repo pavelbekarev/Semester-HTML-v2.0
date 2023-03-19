@@ -169,7 +169,7 @@ li.mainmenu__item {
     font-weight: 700;
     font-size: 58px;
     line-height: 84px;
-    font-family: 'DMSans-Medium', 'DM Sans', sans-serif;
+    font-family: 'DMSans-Bold', 'DM Sans', sans-serif;
     background: linear-gradient(89.83deg, #2563EB 0.11%, #D946EF 58.65%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -202,7 +202,7 @@ li.mainmenu__item {
     font-size: 42px;
     line-height: 55px;
     color: #FFFFFF;
-    font-family: 'DMSans-Medium', 'DM Sans', sans-serif;
+    font-family: 'DMSans-Bold', 'DM Sans', sans-serif;
     text-align: center;
     margin: 0 auto;
 }
@@ -214,7 +214,7 @@ li.mainmenu__item {
     line-height: 26px;
     color: #FFFFFF;
     text-align: center;
-    font-family: 'DMSans-Medium', 'DM Sans', sans-serif;
+    font-family: 'DMSans-Regular', 'DM Sans', sans-serif;
     margin: 30px auto;
 }
 
@@ -313,7 +313,7 @@ li.mainmenu__item {
 }
 
 .card__text {
-    font-family: 'DMSans-Medium', 'DM Sans', sans-serif;
+    font-family: 'DMSans-Regular', 'DM Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
@@ -333,7 +333,7 @@ li.mainmenu__item {
 
 .learn-text a {
     text-decoration: none;
-    font-family: 'DMSans-Medium', 'DM Sans', sans-serif;
+    font-family: 'DMSans-Regular', 'DM Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
@@ -364,7 +364,7 @@ li.mainmenu__item {
     color: #FFFFFF;
     margin-top: 123px;
     text-align: justify;
-    font-family: 'DMSans-Medium', 'DM Sans', sans-serif;
+    font-family: 'DMSans-Bold', 'DM Sans', sans-serif;
 }
 
 .third-section__text {
@@ -375,7 +375,7 @@ li.mainmenu__item {
     width: 579px;
     margin-top: 30px;
     text-align: justify;
-    font-family: 'DMSans-Medium', 'DM Sans', sans-serif;
+    font-family: 'DMSans-Regular', 'DM Sans', sans-serif;
 }
 
 .third-section__button {
@@ -388,6 +388,7 @@ li.mainmenu__item {
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    font-family: 'DMSans-Regular', 'DM Sans', sans-serif;
 }
 
 .third-section__button a {
@@ -417,7 +418,9 @@ li.mainmenu__item {
     font-size: 42px;
     line-height: 55px;
     color: #FFFFFF;
-    font-family: 'DMSans-Medium', 'DM Sans', sans-serif;
+    font-family: 'DMSans-Bold', 'DM Sans', sans-serif;
+    width: 582px;
+    height: 110px;
 }
 
 .fourth-section__text {
@@ -425,7 +428,7 @@ li.mainmenu__item {
     font-size: 16px;
     line-height: 26px;
     color: #FFFFFF;
-    font-family: 'DMSans-Medium', 'DM Sans', sans-serif;
+    font-family: 'DMSans-Regular', 'DM Sans', sans-serif;
     margin-top: 30px;
 }
 
@@ -446,7 +449,7 @@ li.mainmenu__item {
     font-size: 14px;
     line-height: 18px;
     color: #FFFFFF;
-    font-family: 'DMSans-Medium', 'DM Sans', sans-serif;
+    font-family: 'DMSans-Regular', 'DM Sans', sans-serif;
     text-decoration: none;
 }
 
@@ -471,7 +474,7 @@ li.mainmenu__item {
     font-size: 42px;
     line-height: 55px;
     color: #FFFFFF;
-    font-family: 'DMSans-Medium', 'DM Sans', sans-serif;
+    font-family: 'DMSans-Bold', 'DM Sans', sans-serif;
 }
 
 .text-content__text {
@@ -480,7 +483,7 @@ li.mainmenu__item {
     line-height: 21px;
     text-align: center;
     color: #FFFFFF;
-    font-family: 'DMSans-Medium', 'DM Sans', sans-serif;
+    font-family: 'DMSans-Regular', 'DM Sans', sans-serif;
     margin-top: 30px;
     width: 480px;
     height: 51px;
@@ -566,7 +569,7 @@ li.mainmenu__item {
     text-transform: uppercase;
     color: #FFFFFF;
     text-align: center;
-    font-family: 'DMSans-Medium', 'DM Sans', sans-serif;
+    font-family: 'DMSans-Regular', 'DM Sans', sans-serif;
 }
 
 .card__icons {
@@ -591,7 +594,7 @@ li.mainmenu__item {
     line-height: 55px;
     text-align: center;
     color: #FFFFFF;
-    font-family: 'DMSans-Medium', 'DM Sans', sans-serif;
+    font-family: 'DMSans-Bold', 'DM Sans', sans-serif;
 }
 
 .form_text {
@@ -602,13 +605,21 @@ li.mainmenu__item {
     color: #FFFFFF;
     opacity: 0.8;
     margin-top: 13px;
+    font-family: 'Roboto-Regular', 'Roboto', sans-serif;
 }
 
-.form-input {
+/* .form-input {
     display: flex;
+    align-items: center;
+} */
+
+form {
+    position: relative;
+    margin: 1em;
 }
 
 .input__button {
+    display: block;
     background: linear-gradient(180deg, rgba(254, 254, 255, 0.0348) 0%, rgba(255, 255, 255, 0.048) 100%);
     box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.07);
     border-radius: 70px;
@@ -623,11 +634,30 @@ li.mainmenu__item {
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: 44px;
+    padding-left: 44px;
+    text-align: left;
+    font-family: 'Rubik-Regular', 'Rubik-Regular', sans-serif;
 }
 
 .sub__button {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 2.7em;
+    right: .9em;
     background: linear-gradient(90.35deg, #2563EB 0.36%, #D946EF 201.02%);
     opacity: 0.9;
     border-radius: 70px;
     padding: 15px 49px;
+    
+}
+
+.button-text {
+    margin-left: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Rubik-Medium', 'Rubik-Medium', sans-serif;
 }
