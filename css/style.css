@@ -661,3 +661,27 @@ form {
     color: #FFFFFF;
     font-family: 'Rubik-Medium', 'Rubik-Medium', sans-serif;
 }
+
+.footer {
+    margin-top: 103px;
+    max-width: 1472px;
+    height: 299px;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.location-img {
+    width: 24px;
+    height: 24px;
+    
+}
+
+.location-img + span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 0.8);
+}
