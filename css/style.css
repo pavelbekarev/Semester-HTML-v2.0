@@ -914,3 +914,33 @@ form {
         padding: 0 5px;
     }
 }
+
+@media (max-width: 931px) {
+    .menu {
+        margin-left: 100px;
+        padding: 0 5px;
+    }
+}
+
+@media (max-width: 920px) {
+    .form-section {
+        height: 350px;
+    }
+
+    .input__button {
+        width: 600px;
+    }
+
+    .sub__button {
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 830px) {
+    .menu {
+        margin-left: 50px;
+        padding: 0 5px;
+    }
+}
