@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/burger-menu.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -14,6 +15,12 @@
         <section class="section header-menu">
             <div class="container section__wrapper menu__wrapper">
                 <img src="img/Logo.svg" alt="">
+
+                <button class="burger">
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
+                </button>
 
                 <div class="menu">
                     <ul class="mainmenu__list">
@@ -324,58 +331,13 @@
     </main>
     
     <footer>
-        <!-- <section class="section container footer-content">
-            <div class="footer_contacts">
-                <h4 class="footer__logo"><img src="img/Logo.svg" alt=""></h4>
-                <span><img src="img/Location.svg" alt="">Dhaka, Bangladesh</span>
-                <span><img src="img/Calling.svg" alt="">0943833399</span>
-                <span><img src="img/Message.svg" alt="">support@zone.com</span>
-                <div class="web__contacts">
-                    <img src="img/facebook.svg" alt="">
-                    <img src="img/twitter.svg" alt="">
-                    <img src="img/instagram.svg" alt="">
-                    <img src="img/pinterest.svg" alt="">
-                </div>
-            </div>
-            <div class="footer__content">
-                <h4 class="footer__header">Service</h4>
-                <span class="footer__text">Order Management</span>
-                <span class="footer__text">Social Assistant</span>
-                <span class="footer__text">Crypto Platform</span>
-                <span class="footer__text">Analyzer of the News</span>
-            </div>
-            <div class="footer__content">
-                <h4 class="footer__header">Company</h4>
-                <span class="footer__text">Abous Us</span>
-                <span class="footer__text">News</span>
-                <span class="footer__text">Our trusted partner</span>
-                <span class="footer__text">New users FAQ</span>
-            </div>
-            <div class="footer__content">
-                <h4 class="footer__header">Supports</h4>
-                <span class="footer__text">Help center</span>
-                <span class="footer__text">Feedbcak</span>
-                <span class="footer__text">Contact us</span>
-                <span class="footer__text">Terms conditins</span>
-            </div>
-            <div class="footer__content">
-                <h4 class="footer__header">Resources</h4>
-                <span class="footer__text">Download app</span>
-                <span class="footer__text">Blog</span>
-                <span class="footer__text">What`s new</span>
-                <span class="footer__text">Sitemap</span>
-            </div>
-
-            
-        </section> -->
-
         <section class="section container footer-content">
             <div class="footer__information">
                 <ul class="footer__list contacts-info">
-                    <li class="footer__information-text"><a href="#"><img src="img/Logo.svg" alt=""></a></li>
-                    <li class="footer__information-text"><a href="#"><img src="img/Location.svg" alt=""><span>Dhaka, Bangladesh</span></a></li>
-                    <li class="footer__information-text"><a href="tel: 0943833399"><img src="img/Calling.svg" alt="">0943833399</a></li>
-                    <li class="footer__information-text"><a href="mailto: support@zone.com"><img src="img/Message.svg" alt="">support@zone.com</a></li>
+                    <li><a class="contacts-info__li" href="#"><img src="img/Logo.svg" alt=""></a></li>
+                    <li><a class="contacts-info__li" href="#"><img src="img/Location.svg" alt=""><span>Dhaka, Bangladesh</span></a></li>
+                    <li><a class="contacts-info__li" href="tel: 0943833399"><img src="img/Calling.svg" alt=""><span>0943833399</span></a></li>
+                    <li><a class="contacts-info__li" href="mailto: support@zone.com"><img src="img/Message.svg" alt=""><span>support@zone.com</span></a></li>
                     <div class="socials">
                         <li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
                         <li><a href="#"><img src="img/twitter.svg" alt=""></a></li>
@@ -384,12 +346,34 @@
                     </div>
                 </ul>
                 <ul class="footer__list service-info">
-                    <li class="footer__inforamtion-text"><a href="#"><span>Service</span></a></li>
-                    <li class="footer__inforamtion-text"><a href="#"><span>Order Management</span></a></li>
-                    <li class="footer__inforamtion-text"><a href="#"><span>Social Assistant</span></a></li>
-                    <li class="footer__inforamtion-text"><a href="#"><span>Crypto Platform</span></a></li>
-                    <li class="footer__inforamtion-text"><a href="#"><span>Analyzer of the News</span></a></li>
+                    <li><a href="#"><span>Service</span></a></li>
+                    <li><a href="#"><span>Order Management</span></a></li>
+                    <li><a href="#"><span>Social Assistant</span></a></li>
+                    <li><a href="#"><span>Crypto Platform</span></a></li>
+                    <li><a href="#"><span>Analyzer of the News</span></a></li>
                 </ul>
+                <ul class="footer__list">
+                    <li><a href="#"><span>Company</span></a></li>
+                    <li><a href="#"><span>About Us</span></a></li>
+                    <li><a href="#"><span>News</span></a></li>
+                    <li><a href="#"><span>Our trusted partner</span></a></li>
+                    <li><a href="#"><span>New users FAQ</span></a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li><a href="#"><span>Supports</span></a></li>
+                    <li><a href="#"><span>Help center</span></a></li>
+                    <li><a href="#"><span>Feedbcak</span></a></li>
+                    <li><a href="#"><span>Contact us</span></a></li>
+                    <li><a href="#"><span>Terms conditins</span></a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li><a href="#"><span>Resources</span></a></li>
+                    <li><a href="#"><span>Download app</span></a></li>
+                    <li><a href="#"><span>Blog</span></a></li>
+                    <li><a href="#"><span>What’s new</span></a></li>
+                    <li><a href="#"><span>Sitemap</span></a></li>
+                </ul>
+
             </div>
         </section>
         <div class="horizontal_line">
