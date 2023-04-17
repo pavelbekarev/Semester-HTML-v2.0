@@ -1,6 +1,11 @@
 'use strict'
 
-const menu = document.querySelector(".menu");
-const menu__list = document.querySelector(".mainmenu__list");
+const menuItem = document.querySelectorAll(".menu");
+const btnBurger = document.getElementById("burgerButton");
 
+btnBurger.addEventListener("click", () => {
+    for (let el of menuItem) {
+        el.classList.toggle("show");
+    }
+})
 

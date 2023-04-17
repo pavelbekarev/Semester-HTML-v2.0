@@ -43,14 +43,9 @@ ul {
     /* justify-content: space-between; */
 }
 
+
 .burger {
-    position: relative;
-    left: 70%;
-    display: flex;
-    flex-direction: column;
-    background-color: transparent;
-    gap: 10px;
-    border: none;
+    
     display: none;
 }
 
@@ -66,14 +61,11 @@ ul {
 }
 
 .menu {
+    position: relative;
     width: 656px;
     display: flex;
     justify-content: flex-end;
     margin-left: 418px;
-}
-
-.menu__wrapper {
-    /* margin: 0 20px; */
 }
 
 .mainmenu__list {
@@ -97,7 +89,6 @@ ul {
 
 .mainmenu__item {
     margin: 0 20px;
-    
 }
 
 .mainmenu__item:hover {
@@ -119,7 +110,6 @@ ul {
     color: #F9FAFB;
     font-family: 'DMSans-Medium', 'DM Sans', sans-serif;
 }
-
 
 .menu-button:hover {
     background: linear-gradient(90.35deg, #0a51e8 0.36%, #ce0eec 201.02%);
@@ -816,18 +806,12 @@ form {
     font-family: 'DMSans-Regular', 'DM Sans', sans-serif;
 }
 
+.footer__list span:hover {
+    color: red;
+}
+
 .footer__list a {
     text-decoration: none;
-}
-
-.contacts-info {
-    display: flex;
-    flex-direction: column;
-    gap: 10px   ;
-}
-
-.contacts-info__li img + span {
-    padding: 0 10px;
 }
 
 .socials {
@@ -996,8 +980,6 @@ form {
                              "card5" 
                              "card6";
         justify-content: space-around;
-
-
     }
 
     .service__content:nth-child(0) {
@@ -1010,13 +992,45 @@ form {
     } */
 }
 
-
 @media (max-width: 820px) {
     .menu {
         display: none;
     }
 
+    .menu-button {
+        display: none;
+    }
+
     .burger {
+        display: block;
+        padding: 0;
         display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        gap: 10px;
+        border: none;
+        position: absolute;
+        left: 90%;
+        z-index: 1;
+    }
+
+    
+
+    .show {
+        display: block;
+        text-align: center;
+    }
+
+    .mainmenu__list {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .mainmenu__item {
+        padding: 0 auto;
+    }
+
+    .logo--img {
+        position: fixed;
     }
 }
