@@ -17,7 +17,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    
+    font-display: 1;
 }
 
 .container {
@@ -25,7 +25,8 @@ body {
     margin: 0 auto;
     border: solid red 2px;
     position: relative;
-    padding: 0 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 ul {
@@ -142,8 +143,21 @@ ul {
     justify-content: space-between;
 }
 
-.content-image img {
+/* .content-image img {
+
     width: 90%;
+} */
+
+.content-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../img/Saly-19.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right;
 }
 
 .content-items {
@@ -151,11 +165,12 @@ ul {
     flex-direction: column;
     max-width: 546px;
     margin-top: 198px;
+    z-index: 1;
 }
 
 .content-buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     /* max-width: 315px; */
 }
 
@@ -163,6 +178,7 @@ ul {
     display: flex;
     align-items: center;
     width: 151px;
+    margin-left: 29px;
     flex-shrink: 0;
 }
 
@@ -253,7 +269,78 @@ ul {
 .service {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
+
+.service .service__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.slider {
+    display: none;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    background: linear-gradient(268.12deg, rgba(254, 254, 255, 0.032) -11.04%, rgba(255, 255, 255, 0.018) 104.89%);
+    box-shadow: 0px 22px 18px rgba(0, 0, 0, 0.05);
+    border-radius: 34px;
+    width: 370px;
+    min-height: 336px;
+    flex-shrink: 0;
+}
+
+.slider__items {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    transform: translateX(0);
+    transition: transform 0.8s ease-out;
+}
+
+.slider__item {
+    width: 370px;
+    height: 300px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.slider__arrows {
+    display: none;
+}
+
+.arrow-left {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    left: 13%;
+    top: 60%;
+}
+
+.arrow-right {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: 13%;
+    top: 60%;
+}
+
+.arrow-right:active {
+    background-color: red;
+}
+
+.arrow-left:active {
+    background-color: red;
+}
+
+.arrow-left svg {
+    fill: #ffffff;
+}
+
+.arrow-right svg {
+    fill: #ffffff;
+}
+
 
 .service__title {
     font-weight: 700;
@@ -290,6 +377,7 @@ ul {
     border-radius: 34px;
     width: 370px;
     min-height: 336px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
 }
@@ -301,6 +389,7 @@ ul {
     border-radius: 34px;
     width: 370px;
     min-height: 336px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
 }
@@ -312,6 +401,7 @@ ul {
     border-radius: 34px;
     width: 370px;
     min-height: 336px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
 }
@@ -420,15 +510,26 @@ ul {
     flex-direction: row;
     margin-top: 120px;
     /* max-width: 1210px; */
+    justify-content: flex-end;
+
 }
 
-.third-section__img img {
-    width: 90%;
+.third-section__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../img/man-working-using-virtual-reality-4019408-3337377@0\ 1.svg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center left;
 }
 
 .third-section__text-content {
     width: 582px;
     height: 100%;
+    z-index: 1;
 }
 
 
@@ -493,10 +594,19 @@ ul {
     width: 582px;
     height: 100%;
     margin-top: 186px;
+    z-index: 1;
 }
 
-.fourth-section__img img {
-    width: 90%;
+.fourth-section__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../img/section_4.svg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center right;
 }
 
 .fourth-section__title {
@@ -597,7 +707,7 @@ ul {
     grid-area: "card1";
     background-color: red;
     width: 270px;
-    height: 266px;
+    min-height: 266px;
     background: linear-gradient(268.12deg, rgba(254, 254, 255, 0.032) -11.04%, rgba(255, 255, 255, 0.018) 104.89%);
     box-shadow: 0px 22px 18px rgba(0, 0, 0, 0.05);
     border-radius: 34px;
@@ -607,7 +717,7 @@ ul {
     grid-area: "card2";
     background-color: green;
     width: 270px;
-    height: 266px;
+    min-height: 266px;
     background: linear-gradient(268.12deg, rgba(254, 254, 255, 0.032) -11.04%, rgba(255, 255, 255, 0.018) 104.89%);
     box-shadow: 0px 22px 18px rgba(0, 0, 0, 0.05);
     border-radius: 34px;
@@ -617,7 +727,7 @@ ul {
     grid-area: "card3";
     background-color: blue;
     width: 270px;
-    height: 266px;
+    min-height: 266px;
     background: linear-gradient(268.12deg, rgba(254, 254, 255, 0.032) -11.04%, rgba(255, 255, 255, 0.018) 104.89%);
     box-shadow: 0px 22px 18px rgba(0, 0, 0, 0.05);
     border-radius: 34px;
@@ -627,7 +737,7 @@ ul {
     grid-area: "card4";
     background-color: red;
     width: 270px;
-    height: 266px;
+    min-height: 266px;
     background: linear-gradient(268.12deg, rgba(254, 254, 255, 0.032) -11.04%, rgba(255, 255, 255, 0.018) 104.89%);
     box-shadow: 0px 22px 18px rgba(0, 0, 0, 0.05);
     border-radius: 34px;
@@ -635,7 +745,6 @@ ul {
 
 
 .card__img {
-    grid-area: "img";
     margin-top: 32px;
     margin-left: auto;
     margin-right: auto;
@@ -646,7 +755,6 @@ ul {
 .card__img img {
     width: 90.64px;
     height: 89.16px;
-
 }
 
 .card__name {
@@ -823,14 +931,6 @@ form {
     justify-content: space-between;
 }
 
-
-
-
-
-
-
-
-
 .horizontal_line {
     position: relative;
     left: -100px;
@@ -876,7 +976,7 @@ form {
 
 
 
-/* MEDIA REQUES */
+/* АДАПТАЦИЯ САЙТА*/
 @media (max-width: 1400px) {
     .horizontal_line {
         display: none;
@@ -888,16 +988,16 @@ form {
         width: auto;
         padding: 0 auto;
     }
-
+/* 
     .content-image,
     .third-section__img,
     .fourth-section__img {
-        display: none;
-    }
+        width: auto;
+        flex-shrink: 3;
+    } */
 
-    .third-section__content {
+    /* .third-section__content {
         justify-content: flex-end;
-        
     }
 
     .third-section__text-content {
@@ -910,7 +1010,7 @@ form {
 
     .fourth-section__text-content {
         margin-left: 35px;
-    }
+    } */
 }
 
 @media (max-width: 1155px) {
@@ -941,6 +1041,14 @@ form {
     .menu {
         margin-left: 200px;
         padding: 0 5px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .content-image,
+    .third-section__img,
+    .fourth-section__img {
+        display: none;
     }
 }
 
@@ -1020,11 +1128,35 @@ form {
     }
 }
 
-@media (max-width: 764px) {
+@media (max-width: 780px) {
     .menu {
         margin-left: 25px;
     }
 
+    .service__wrapper {
+        align-items: center;
+    }
+
+    .slider {
+        display: flex;
+        text-align: center;
+    }
+
+    .slider__arrows {
+        display: block;
+    }
+
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5,
+    .card6 {
+        display: none;
+    }
+
+
+/* 
     .service__content {
         grid-template-areas: "card1"
                              "card2"
@@ -1038,7 +1170,7 @@ form {
     .service__content:nth-child(0) {
         transform: translateX(40px);
         transition: transform 0.2s ease-in;
-    }
+    } */
 /* 
     .service__content:nth-child(odd) {
         justify-content: flex-end;
